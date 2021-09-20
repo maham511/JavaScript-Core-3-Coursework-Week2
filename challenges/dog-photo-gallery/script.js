@@ -16,7 +16,9 @@ function fetchDog() {
       li.append(img);
       img.src = greeting.message;
       img.width = 200;
-    });
+    })
+    //logs if an error occurs
+    .catch((err) => console.log(err));
 }
 
 //onclick button adds random dog img to page
